@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue"></script>
+    <!-- BS 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/vueify-bootstrap-main.css">
+
+    <title>Vueify Bootstrap</title>
+</head>
+<body>
+    <!-- Vue -->
+    <div id="vue1">
+        <h1 style="text-align: center" >Vueify Bootstrap</h1>
+        <div class='container'>
+
+            <div class="row justify-content-sm-center">
+                <input class="col-4" v-model="item.mainText" placeholder="Enter main label text here">
+                
+                <input class="col-4" v-model="item.collapseText" placeholder="Enter collapse text here">
+                
+                <button class="col-4" v-on:click="addItem">Add Item</button>
+            </div>
+
+            <div class="row justify-content-sm-center">
+                <!-- Panel Collapse -->
+                <div class="col-sm-6 tablist1" role="tablist">
+                    <my-collapse-item v-for="(item1, index) in collapseItems" v-bind:maintext="item1.mainText" v-bind:collapsetext="item1.collapseText" v-bind:index="index"></my-collapse-item>
+                </div>
+            </div> 
+
+        </div>
+
+    </div> 
+    <!-- End vue1 -->
+
+
+    <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+        </script>
+
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <!-- Main JS -->
+        <script src="/vueify-bootstrap-main.js"></script> 
+</body>
+</html>
+
+

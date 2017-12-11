@@ -1,0 +1,28 @@
+#link1 {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0;
+
+
+}
+.tablist1 {
+    margin-top: 2rem;
+}
+h1 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.head1 {
+    padding: 0 0;
+
+
+}
+#mainTextCSS {
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    margin: 0.5rem 0.5rem ;
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
